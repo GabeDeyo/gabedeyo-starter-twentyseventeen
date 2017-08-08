@@ -1,0 +1,59 @@
+@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+@import "https://fonts.googleapis.com/css?family=Libre+Franklin:400,800";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css";
+/* line 6, ../../../twentyseventeen-starter/components/sass/_base.scss */
+body {
+  background: #fefdfb;
+}
+
+/* line 11, ../../../twentyseventeen-starter/components/sass/_base.scss */
+body, html {
+  height: 100%;
+}
+
+/* line 15, ../../../twentyseventeen-starter/components/sass/_base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+/* line 4, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.bg {
+  /* the image used */
+  background-image: url("../images/header.jpg");
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 8, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, #fff, #000);
+  opacity: 0.25;
+}
+
+/* line 14, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.text-overlay {
+  position: absolute;
+  margin-top: -10%;
+}
+
+/* line 19, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.test-gradient {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(#8b9da9, #fff6e4);
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+  opacity: 0.5;
+}

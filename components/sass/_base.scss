@@ -1,0 +1,19 @@
+// _base.scss
+// ==============
+
+//Put core style changes
+
+body {
+  background: lighten($eggshell, 10%);
+  //font-family: $bodyFont;
+}
+
+body, html {
+  height: 100%;
+}
+ 
+#{headings()} {
+  font-family: $libreFont;
+  font-weight: 800;
+  font-size: 3em;
+}
