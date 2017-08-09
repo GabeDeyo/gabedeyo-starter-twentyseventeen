@@ -44,16 +44,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 14, ../../../twentyseventeen-starter/components/sass/_modules.scss */
-.text-overlay {
+.header-overlay-text {
   position: absolute;
-  margin-top: -10%;
+  margin-top: -150px;
+  margin-left: auto;
+  width: 75%;
+  color: #FFFFFF;
+}
+/* line 23, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.header-overlay-text a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 28, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.header-overlay-text #arrow-down {
+  fill: #FFFFFF;
+  float: right;
+}
+/* line 33, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.header-overlay-text h1:hover {
+  color: #e6e6e6;
+}
+/* line 37, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.header-overlay-text svg:hover {
+  fill: #e6e6e6;
 }
 
-/* line 19, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+/* line 42, ../../../twentyseventeen-starter/components/sass/_modules.scss */
 .test-gradient {
   width: 100%;
   height: 100px;
   background-image: linear-gradient(#8b9da9, #fff6e4);
   box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
   opacity: 0.5;
+}
+
+/* line 50, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.overlay {
+  position: relative;
+  display: inline-block;
+}
+/* line 54, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.overlay:after {
+  content: attr(title);
+  background: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.75);
+  padding: .5em 1em;
+  font-family: helvetica;
+  font-size: 14px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .25s ease-in-out;
+}
+/* line 67, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.overlay:hover:after {
+  background: black;
+  color: #fff;
+}
+/* line 72, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.overlay.href {
+  overflow: hidden;
+}
+/* line 74, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.overlay.href:after {
+  content: "Visit " attr(href);
+  top: auto;
+  bottom: 0;
+  right: auto;
+  left: -100%;
+}
+/* line 83, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+.overlay.href:hover:after, .overlay.href:focus:after {
+  left: 0;
+}
+
+/* line 90, ../../../twentyseventeen-starter/components/sass/_modules.scss */
+[data-overlay]:after {
+  content: attr(data-overlay);
 }
